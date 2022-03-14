@@ -1,0 +1,6 @@
+mysql_enabled_on_startup: true
+mysql_root_home: "/{{ main_user }}"
+mysql_root_username: "{{ main_user }}"
+mysql_root_password: "{{ mysql_root_user_pw }}"
+mysql_databases:
+  - "{{ main_mysql_db }}"

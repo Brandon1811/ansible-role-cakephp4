@@ -1,0 +1,4 @@
+- hosts: mysql
+  become: true
+  roles:
+    - ansible-role-mysql

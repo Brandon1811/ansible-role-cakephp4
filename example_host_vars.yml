@@ -1,0 +1,24 @@
+---
+
+##########################################
+#            general Vars                 #
+##########################################
+main_user: cake
+main_user_password: set_a_super_hard_password_here
+site_short_name: cake
+
+##########################################
+#           Hardening Vars               #
+##########################################
+
+# Update root password
+ubuntu2004cis_root_password: example_root_password
+
+# 1.4.2 Bootloader password
+ubuntu2004cis_bootloader_password: example_bootloader_password
+ubuntu2004cis_set_boot_pass: true
+
+ubuntu2004cis_httpd_server: true
+
+ubuntu2004cis_at_allow_users: [cake]
+ubuntu2004cis_cron_allow_users: [cake]

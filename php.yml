@@ -1,0 +1,6 @@
+---
+- hosts: php
+  become: true
+  roles:
+    - ansible-role-php-versions
+    - ansible-role-php
