@@ -3,9 +3,28 @@
 ##########################################
 #            general Vars                 #
 ##########################################
+include_initial_setup: true
 main_user: cake
 main_user_password: set_a_super_hard_password_here
 site_short_name: cake
+site_url: xxx.xxx.xxx.xxx
+
+##########################################
+#             mysql Vars                 #
+##########################################
+mysql_root_user_pw: set_a_different_super_hard_password_here
+mysql_main_user_pw: set_another_different_super_hard_password_here
+
+mysql_enabled_on_startup: true
+mysql_root_home: "/var/lib/mysql"
+mysql_root_username: "root"
+mysql_databases:
+  - name: example_db
+mysql_users:
+  - name: "{{ main_user }}"
+    host: "localhost"
+    password: "{{ mysql_main_user_pw }}"
+    priv: "example_db.*:ALL"
 
 ##########################################
 #           Hardening Vars               #

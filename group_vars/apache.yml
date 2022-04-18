@@ -2,4 +2,4 @@ apache_remove_default_vhost: true
 
 apache_vhosts:
   - servername: "{{ site_url }}"
-    documentroot:  "/var/www/{{ site_short_name }}/html/{{ site_short_name }}"
+    documentroot:  "/var/www/{{ site_short_name }}/html/{{ site_short_name }}/webroot"

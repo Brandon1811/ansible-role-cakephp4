@@ -1,0 +1,3 @@
+---
+staging_git_url: "{{ main_user }}@{{ site_url }}:/var/repo/{{ site_short_name }}"
+cake_app_root: "/mnt/g/code/skeleton"

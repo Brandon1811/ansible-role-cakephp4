@@ -78,6 +78,7 @@ ubuntu2004cis_firewall: ufw
 
 ubuntu2004cis_firewall_services:
   - ssh
+  - apache2
   - dhcpv6-client
 
 ## Section 4 Vars

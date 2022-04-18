@@ -1,0 +1,19 @@
+- hosts: localhost
+  tasks:
+  - name: Ensure remote staging repo is setup for STAGING environment in our local dev git repo
+    command:
+      cmd: git remote add staging {{ staging_git_url }}
+      chdir: "{{ cake_app_root }}"
+    register: add_result
+    changed_when: add_result.rc == 0
+    failed_when:
+      - add_result.rc != 0
+      - add_result.stderr | default('') is not search("remote .* already exists")
+
+  - name: push our changes to our staging branch
+    command:
+      cmd: git push staging HEAD
+      chdir: "{{ cake_app_root }}"
+
+  tags:
+    - cake

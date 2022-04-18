@@ -23,6 +23,12 @@
         state: present
         key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
 
+    - name: Set authorized key for root user
+      ansible.posix.authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
+
     - name: Disable password authentication for root
       lineinfile:
         path: /etc/ssh/sshd_config
@@ -40,3 +46,5 @@
           - fail2ban
         state: latest
         update_cache: true
+  tags:
+    - initial

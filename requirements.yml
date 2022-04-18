@@ -7,3 +7,4 @@ roles:
   - src: https://github.com/geerlingguy/ansible-role-php
   - src: https://github.com/geerlingguy/ansible-role-apache
   - src: https://github.com/geerlingguy/ansible-role-mysql
+  - src: https://github.com/geerlingguy/ansible-role-composer

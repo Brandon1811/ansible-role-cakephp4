@@ -1,5 +1,10 @@
 ---
 - hosts: apache
   become: yes
+  vars_files:
+    - group_vars/apache.yml
   roles:
     - ansible-role-apache
+  tags:
+    - php
+    - cake

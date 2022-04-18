@@ -6,3 +6,6 @@
   tasks:
     - name: Install fail2ban using apt
       apt: name=fail2ban state=latest update_cache=yes force_apt_get=yes
+  tags:
+    - harden
+    - cis
