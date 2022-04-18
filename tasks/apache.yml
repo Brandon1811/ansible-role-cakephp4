@@ -1,0 +1,6 @@
+---
+# install apache using geerlingguy apache role
+- name: 'Use geerlingguy.apache role'
+  include_role:
+    name: ansible-role-apache
+  tags: apache

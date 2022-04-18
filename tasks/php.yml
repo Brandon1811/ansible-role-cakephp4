@@ -1,0 +1,19 @@
+---
+- name 'Use PHP roles from geerlingguy to install php7.4, required packages, and composer'
+  vars:
+    php_version: '7.4'
+  include_role:
+    name: ansible-role-php-versions
+  tags: php
+
+- name 'Use PHP roles from geerlingguy to install php7.4, required packages, and composer'
+  vars:
+    php_version: '7.4'
+  include_role:
+    name: ansible-role-php
+  tags: php
+
+- name 'Use PHP roles from geerlingguy to install php7.4, required packages, and composer'
+  include_role:
+    name: ansible-role-composer
+  tags: php

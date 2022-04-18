@@ -1,0 +1,13 @@
+---
+# Main tasks file for setting up/managing a CakePHP 4 install
+- include: ssh_port_fallback.yml
+
+- include: harden.yml
+  
+- include apache.yml
+
+- include mysql.yml
+
+- include php.yml
+
+- include cake.yml

@@ -1,7 +1,0 @@
-- hosts: mysql
-  become: true
-  roles:
-    - ansible-role-mysql
-  tags:
-    - mysql
-    - cake

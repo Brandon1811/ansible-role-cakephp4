@@ -1,0 +1,7 @@
+---
+
+# install mysql using geerlingguy mysql role
+- name: 'Use geerlingguy.mysql role'
+  include_role:
+    name: ansible-role-mysql
+  tags: mysql
