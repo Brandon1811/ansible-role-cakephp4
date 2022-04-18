@@ -1,0 +1,12 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: "Brandon Shipley"
+  description: "Ansible role to deploy a cakephp4 application on a hardened Ubuntu 20.04 server"
+  company: "none"
+  license: MIT
+  min_anisble_version: 2.9
+  role_name: ansible-role-cakephp4
+  galaxy_tags: 
+    - cakephp
